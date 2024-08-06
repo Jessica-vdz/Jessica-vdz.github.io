@@ -1,5 +1,45 @@
-body{
+*{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+}
+.banner{
+    width:100%;
+    height:100vh;
     background-color:#01110a ;
-    margin: 0;
-    padding: 0;
+    margin:auto;
+    padding: 0%;
+}
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding:35px 0;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    background-color: #003e1f;
+}
+.navbar ul li {
+    list-style: none;
+    display:inline-block;
+    margin: 0 20px;
+    position:relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:#d5f2e3;
+    text-transform: uppercase;
+}
+.navbar ul li a::after{
+    content:'';
+    height:3px;
+    width:0%;
+    background-color: #73ba9b;
+    position:absolute;
+    left:0;
+    bottom:0;
+    transition: 0.5s ease;
+}
+.navbar ul li :hover::after{
+    width:100%;
 }
